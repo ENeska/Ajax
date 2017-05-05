@@ -20,26 +20,35 @@
     <form id="form-container" class="form-inline">
 
         <label for="street">Ulica: </label>
-        <input type="text" id="street">
+        <input type="text" id="street" value="bielska">
         <label for="city">Miasto: </label>
-        <input type="text" id="city">
+        <input type="text" id="city" value="tychy">
         <button type="submit" class="btn">Wyszukaj</button>
 
     </form>
 
     <hr>
 
-    <img src="" class="photo" alt="zdjęcie">
+    <img src="https://maps.googleapis.com/maps/api/streetview?size=800x500&location=bielska,%20tychy&heading=151.78&pitch=-0.76&key=AIzaSyB-i_BLvLuEipeeiCzHEsEPNYyYTHhtVqo" class="photo" alt="zdjęcie">
 
-    <div class="wikipedia-container">
-        <h2>Kilka artykułów z Wikipedi:</h2>
-        <ul id="wikipedia-links"> </ul>
-    </div>
 
-    <div class="nytimes-container">
-        <h2>I jeszcze kilka z New York Times:</h2>
-        <ul id="nytimes-articles" class="article-list"> </ul>
-    </div>
+        <article class="article1">
+            <div class="wikipedia-container">
+                <h2>Kilka artykułów z Wikipedi:</h2>
+                <ul id="wikipedia-links"> </ul>
+            </div>
+        </article>
+        <article class="article2">
+            <div class="nytimes-container">
+                <h2>I jeszcze kilka z New York Times:</h2>
+                <ul id="nytimes-articles" class="article-list"> </ul>
+            </div>
+        </article>
+
+
+
+
+
 
 </div>
 

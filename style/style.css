@@ -13,7 +13,7 @@ input, button {
 
 .container {
     margin: 0 auto;
-    width:70%;
+    width:60%;
 }
 
 .container li {
@@ -35,4 +35,14 @@ hr, .photo {
 
 .wikipedia-container, .nytimes-container {
     text-align: justify;
+}
+
+.article1 {
+    width:30%;
+    float: left;
+}
+
+.article2 {
+    width:70%;
+    float: right;
 }
