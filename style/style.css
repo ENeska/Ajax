@@ -1,4 +1,3 @@
-
 .photo {
     display: block;
     margin: 0 auto;
@@ -47,43 +46,3 @@ hr, .photo {
     width:70%;
     float: right;
 }
-
-.photo {
-    display: block;
-    margin: 0 auto;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-}
-
-input, button {
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    height: 30px;
-}
-
-.container {
-    margin: 0 auto;
-    width:70%;
-}
-
-.container li {
-    list-style:none;
-    margin-left: -40px;
-}
-
-h1, h2 {
-    color: grey;
-}
-
-h2 {
-    font-size: 120%;
-}
-
-hr, .photo {
-    margin-bottom: 40px;
-}
-
-.wikipedia-container, .nytimes-container {
-    text-align: justify;
-}
-
