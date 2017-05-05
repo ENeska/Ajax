@@ -8,49 +8,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Ajax</title>
 </head>
 <body>
 
-<div class="container">
+    <div class="container col-9">
 
-    <h1>Skąd pochodzisz?</h1>
+        <div class="jumbotron">
+            <h1>Skąd pochodzisz?</h1>
 
-    <form id="form-container" class="form-inline">
+            <form id="form-container">
+        <div class="row" >
 
-        <label for="street">Ulica: </label>
-        <input type="text" id="street" value="bielska">
-        <label for="city">Miasto: </label>
-        <input type="text" id="city" value="tychy">
-        <button type="submit" class="btn">Wyszukaj</button>
+            <div class="input-group col-5">
+                <label for="city" class="col-3 text-primary">Miasto: </label>
+                <input type="text" class="form-control col-9" id="city">
 
-    </form>
+            </div>
 
-    <hr>
+            <div class="input-group col-5">
+                <label for="street" class="col-3 text-primary ">Ulica: </label>
+                <input type="text" class="form-control col-9" id="street">
 
-    <img src="https://maps.googleapis.com/maps/api/streetview?size=800x500&location=bielska,%20tychy&heading=151.78&pitch=-0.76&key=AIzaSyB-i_BLvLuEipeeiCzHEsEPNYyYTHhtVqo" class="photo" alt="zdjęcie">
+            </div>
+
+            <div class="input-group col-2">
+                <button type="submit" class="btn btn-primary">Wyszukaj</button>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+        <div class="row">
+            <img src="" class="photo col-8">
+        </div>
 
 
-        <article class="article1">
-            <div class="wikipedia-container">
-                <h2>Kilka artykułów z Wikipedi:</h2>
+        <div class="row col-12">
+            <div class="wikipedia-container col-4">
+                <h2 class="text-primary" id="wikipedia-header">Kilka artykułów z Wikipedi:</h2>
                 <ul id="wikipedia-links"> </ul>
             </div>
-        </article>
-        <article class="article2">
-            <div class="nytimes-container">
-                <h2>I jeszcze kilka z New York Times:</h2>
-                <ul id="nytimes-articles" class="article-list"> </ul>
+
+            <div class="nytimes-container col-8">
+                <h2 class="text-primary" id="nyt-header">I jeszcze kilka z New York Times:</h2>
+                <ul id="nytimes-articles"> </ul>
             </div>
-        </article>
 
+        </div>
 
-
-
-
-
-</div>
+    </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/app.js"></script>

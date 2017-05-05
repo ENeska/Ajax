@@ -1,6 +1,7 @@
 var body = $('body');
 var wikiEl = $('#wikipedia-links');
 var wikiHeaderEl = $('#wikipedia-header');
+var nyHeaderEl = $('#nyt-header');
 var nytEl = $('#nytimes-articles');
 var img = $('.photo');
 var city = $('#city');
@@ -9,7 +10,7 @@ $( document ).ready(function() {
     $('#form-container').on('submit', loadData);
 });
 
-function Clear() {
+function clear() {
     wikiEl.text('');
     nytEl.text('');
 }
@@ -69,7 +70,7 @@ function prepareWikiData() {
 function loadData(submit) {
 
     submit.preventDefault();
-    Clear();
+    clear();
     prepareGoogleData();
     prepareNYTimesData();
     prepareWikiData();
@@ -81,5 +82,5 @@ function renderWikiError() {
 }
 
 function renderNYTimesError() {
-    nytHeaderEl.text('Coś poszło nie tak...');
+    nyHeaderEl.text('Coś poszło nie tak...');
 }
